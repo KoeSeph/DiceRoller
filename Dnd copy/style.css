@@ -1,0 +1,58 @@
+body{
+  background-color: #848484;
+}
+
+.number {
+  background-image: url('dice26.jpg');
+  background-color: #ddd;
+  width:  100px;
+  height: 100px;
+  margin: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 65px;
+  background-size: cover;
+}
+#dice {
+  border: 2px solid #000;
+}
+.numdie{
+  border: 3px dashed #600;
+  max-width: 220px;
+  min-height: 10%;
+  margin: 1% auto;
+}
+.typedie{
+  border: 3px dashed #600;
+  width: 260px;
+  min-height: 15%;
+  margin: 1% auto;
+}
+label {
+  margin: 65px;
+  padding: 10px;
+}
+button{
+  margin: 0 0 3% 0;
+  border-radious: 50px;
+  background-color: gray;
+}
+.leftest{
+  margin-left: 2%
+}
+.leftestt{
+  margin-left: 40%;
+}
+#tth:focus {
+  background-color: #00f;
+  border-radious: 50px;
+}
+.moddie{
+  border: 3px dashed #600;
+  width: 250px;
+  min-height: 15%;
+  margin: 1% auto;
+}
+#click {
+  margin: 0 0 0 25%;
+}

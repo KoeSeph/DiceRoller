@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <title>Rolling Dice</title>
+  <link rel='stylesheet' href='style.css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" ></script>
+  <script src='dnd.js'></script>
+</head>
+ <body>
+   <header>
+     <h1>Rolling Dice</h1>
+     <p>Choose the type of die you would like to roll, then click the picture to roll it. you can add more dice with the + and - buttons. There is also a modifier, so if you dont want to do math, click set to set the modifier, and reset to bring it back to 0.</p>
+   </header>
+   <div class='typedie'>
+  <label>Type of die?
+  </label>
+  <button class='leftest' id='tth'><p>d2</p></button>
+  <button id='tth' class='dfur'><p>d4</p></button>
+  <button id='tth' class='dsis'><p>d6</p></button>
+  <button id='tth' class='date'><p>d8</p></button>
+  <button id='tth' class='dten'><p>d10</p></button>
+  <button id='tth' class='dtelv'><p>d12</p></button>
+  <button id='tth' class='dnat'><p>d20</p></button>
+  <button id='tth' class='dcent'><p>d100</p></button>
+</div>
+<div class='numdie'>
+  <label>Number of die?
+  </label>
+  <button id='adddie' class='leftestt'><p>+</p></button>
+  <button id='takedie'><p>-</p></button>
+</div>
+<div class='moddie'>
+  <label>Modifier?</label>
+  <button id='click'><p>SET</p></button>
+  <button id='reset'><p>RESET</p></button>
+</div>
+<section id='dice'>
+  <div class='number'> 
+  </div>
+</section>
+   <footer><p>Copyright ╰(✿˙ᗜ˙)੭━☆ﾟ.*･｡ﾟ 2015</p></footer>
+</body>
+</html>
