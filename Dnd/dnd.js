@@ -10,7 +10,6 @@ $(document).ready(function() {
    };
    var fast = Math.round(getRandomArbitrary(frm,too));
    $(this).append('<p>'+ fast+'</p>');
-   console.log(fast);
    return totter = totter + fast;
  };
  function getRandomArbitrary(min, max) {
@@ -77,7 +76,6 @@ $('#reset').on('click', function(){
   return modie = 0
 });
 $('#totes').on('click',function(){
-  console.log(totter);
   var totnum = $('.moddie').find('p')? 1 : 0;
   if (totnum = 1) {
    $('.moddie .mathin').find('p').remove();
