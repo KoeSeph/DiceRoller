@@ -2,33 +2,30 @@ $(document).ready(function() {
 var frm = 1;
 var too = 0;
 var modie = 0;
-function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min + modie;
-};
-$('#adddie').on('click', function(){
- $('body').find('#dice')
-          .append("<div class='number'><p>"+ Math.round(getRandomArbitrary(frm,too)) +"</p></div>");
-    $('#dice .number').on('click', function(){
-    var numnum = $("p")? 1 : 0;
-      if (numnum = 1) {
-       $(this).find('p').remove();
-      };
-    $(this).append('<p>'+ Math.round(getRandomArbitrary(frm,too)) + '</p>');
-    console.log('fired');
-});
-  
-});
-$('#takedie').on('click', function(){
- $('body').find('.number').remove(':nth-child(2)');
-});
-$('#dice .number').on('click', function(){
+var totter = 0;
+var listin = function(){
   var numnum = $("p")? 1 : 0;
   if (numnum = 1) {
  $(this).find('p').remove();
    };
-  $(this).append('<p>'+ Math.round(getRandomArbitrary(frm,too))+'</p>');
-  console.log('fired');
+  var fast = Math.round(getRandomArbitrary(frm,too));
+  $(this).append('<p>'+ fast+'</p>');
+  console.log(fast);
+  return totter = totter + fast;
+};
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min + modie;
+};
+$('#adddie').on('click', function(){
+/* $('.number').unbind('click');*/
+ $('body').find('#dice')
+          .append("<div class='number'><p>"+ 0 +"</p></div>");
+  $('.number:last-child').on('click',listin);
 });
+$('#takedie').on('click', function(){
+ $('body').find('.number').remove(':nth-child(2)');
+});
+
 $('.leftest').on('click', function(){
   $('button').css('background-color','grey');
   $(this).css('background-color','red');
@@ -68,16 +65,29 @@ $('.dnat').on('click', function(){
   $(this).css('background-color','red');
   return too = 20;
   });
-$('.dcent').on('click', function(){
-  $('button').css('background-color','grey');
-  $(this).css('background-color','red');
-  return too = 100;
-  });
 $('#click').on('click', function(){
   return modie = +prompt('Whats the modifier?');
 });
 $('#reset').on('click', function(){
   return modie = 0
 });
-
+$('#totes').on('click',function(){
+  console.log(totter);
+  var totnum = $('.moddie').find('p')? 1 : 0;
+  if (totnum = 1) {
+ $('.moddie .mathin').find('p').remove();
+   };
+  $('.mathin').append('<p>' + totter + '</p>');
 });
+$('#remath').on('click', function(){
+var totnum = $('.moddie').find('p')? 1 : 0;
+  if (totnum = 1) {
+ $('.moddie .mathin').find('p').remove();
+   };
+  return totter = 0;
+ });
+});
+
+
+
+

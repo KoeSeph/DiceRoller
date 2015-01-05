@@ -6,7 +6,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" ></script>
   <script src='dnd.js'></script>
 </head>
- <body>
+  <body>
    <header>
      <h1>Rolling Dice</h1>
      <p>Choose the type of die you would like to roll, then click the picture to roll it. you can add more dice with the + and - buttons. There is also a modifier, so if you dont want to do math, click set to set the modifier, and reset to bring it back to 0.</p>
@@ -21,7 +21,6 @@
   <button id='tth' class='dten'><p>d10</p></button>
   <button id='tth' class='dtelv'><p>d12</p></button>
   <button id='tth' class='dnat'><p>d20</p></button>
-  <button id='tth' class='dcent'><p>d100</p></button>
 </div>
 <div class='numdie'>
   <label>Number of die?
@@ -34,9 +33,14 @@
   <button id='click'><p>SET</p></button>
   <button id='reset'><p>RESET</p></button>
 </div>
+<div class='moddie'>
+  <label>TOTAL!!</label>
+  <button id='totes'>ADD EM UP!</button>
+  <div class='mathin'></div>
+  <button id='remath'><p>RESET</p></button>
+</div>
 <section id='dice'>
-  <div class='number'> 
-  </div>
+  
 </section>
    <footer><p>Copyright ╰(✿˙ᗜ˙)੭━☆ﾟ.*･｡ﾟ 2015</p></footer>
 </body>
