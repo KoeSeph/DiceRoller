@@ -65,6 +65,11 @@ $('.dnat').on('click', function(){
   $(this).css('background-color','red');
   return too = 20;
 });
+$('.dcent').on('click', function(){
+  $('button').css('background-color','grey');
+  $(this).css('background-color','red');
+  return too = 100;
+});
 $('#click').on('click', function(){
   return modie = +prompt('Whats the modifier?');
 });
