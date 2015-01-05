@@ -86,6 +86,9 @@ $('#remath').on('click', function(){
  };
  return totter = 0;
 });
+$('#roll').on('click',function(){
+  $('.number').trigger('click');
+});
 });
 
 
