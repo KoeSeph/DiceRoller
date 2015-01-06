@@ -34,8 +34,9 @@
   transform-style: preserve-3d;
 }
 #baseDiv, #upDiv {
+  border: 4px dashed #000;
   position: absolute;
-  background: #5677fc;
+  background-color: #8cf;
   top: 0;
   left: 0;
   width: 200px;
@@ -43,7 +44,7 @@
   backface-visibility: hidden;
 }
 #baseDiv {
-  background-color: #5677fc;
+  background-color: #8cf;
   background-size: cover;
 }
 #upDiv {
@@ -89,6 +90,7 @@
   transform-style: preserve-3d;
 }
 #baseDivt, #upDivt {
+  border: 4px dashed #000;
   position: absolute;
   background: #5677fc;
   top: 0;
@@ -98,7 +100,7 @@
   backface-visibility: hidden;
 }
 #baseDivt {
-  background-color: #5677fc;
+  background-color: #8cf;
   background-size: cover;
 }
 #upDivt {
