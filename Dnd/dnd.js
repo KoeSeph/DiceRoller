@@ -99,7 +99,7 @@ $(document).keypress(function(e) {
     if(e.which != 9) {
         $('#roll').trigger('click');
         $('#totes').trigger('click');
-    }
+    };
 });
 });
 
