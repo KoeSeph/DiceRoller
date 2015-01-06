@@ -95,6 +95,12 @@ $('#roll').on('click',function(){
 $('#roll').on('click',function(){
   $('.number').trigger('click');
 });
+$(document).keypress(function(e) {
+    if(e.which != 9) {
+        $('#roll').trigger('click');
+        $('#totes').trigger('click');
+    }
+});
 });
 
 
