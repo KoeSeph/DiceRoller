@@ -1,0 +1,114 @@
+.wrapper{
+  display: inline-flex;
+}
+
+#baseDiv {
+  background-color: #eee;
+  width: 200px;
+  height: 200px;
+  border-radius: 26px;
+}
+#upDiv {
+  background-color: #eee;
+  width: 200px;
+  height: 200px;
+  border-radius: 26px;
+}
+.stubborn {
+  
+  text-align: center;
+  line-height: 160px;
+}
+.thinger {
+  perspective: 1500;
+}
+
+#chicken {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+}
+#baseDiv, #upDiv {
+  position: absolute;
+  background: #5677fc;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  backface-visibility: hidden;
+}
+#baseDiv {
+  background-color: #5677fc;
+  background-size: cover;
+}
+#upDiv {
+  transform: rotateY(180deg);
+}
+.noodle:hover {
+  transform: rotateY(180deg);
+}
+#upSelect {
+  position: absolute;
+  top: 89px;
+  left: 80px;
+}
+#baseDivt {
+  background-color: #eee;
+  width: 200px;
+  height: 200px;
+  border-radius: 26px;
+}
+#upDivt {
+  background-color: #eee;
+  width: 200px;
+  height: 200px;
+  border-radius: 26px;
+}
+.stubborn {
+  
+  text-align: center;
+  line-height: 160px;
+}
+.thingert {
+  perspective: 1500;
+}
+
+#chickent {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+}
+#baseDivt, #upDivt {
+  position: absolute;
+  background: #5677fc;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  backface-visibility: hidden;
+}
+#baseDivt {
+  background-color: #5677fc;
+  background-size: cover;
+}
+#upDivt {
+  transform: rotateY(180deg);
+}
+.noodlet:hover {
+  transform: rotateY(180deg);
+}
+#upSelectt {
+  position: absolute;
+  top: 89px;
+  left: 80px;
+}
