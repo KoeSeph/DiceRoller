@@ -1,7 +1,40 @@
 .wrapper{
   display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #aaa;
+  border-radius: 50px;
+  margin-top: 200px;
+  min-width: 89.5%;
+  max-width: 89.5%;
 }
-
+.pushin{
+  background-color: #98ee78;
+  position: absolute;
+  top: 90px;
+  left: 400px;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+}
+.rollin {
+  background-color: #98ee78;
+  position: absolute;
+  top: 90px;
+  left: 500px;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+}
+.addin {
+  background-color: #98ee78;
+  position: absolute;
+  top: 90px;
+  left: 600px;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+}
 #baseDiv {
   background-color: #eee;
   width: 200px;
@@ -23,7 +56,7 @@
   perspective: 1500;
 }
 
-#chicken {
+.hook {
   color: #fff;
   position: relative;
   text-align: center;
@@ -53,63 +86,7 @@
 .noodle:hover {
   transform: rotateY(180deg);
 }
-#upSelect {
-  position: absolute;
-  top: 89px;
-  left: 80px;
-}
-#baseDivt {
-  background-color: #eee;
-  width: 200px;
-  height: 200px;
-  border-radius: 26px;
-}
-#upDivt {
-  background-color: #eee;
-  width: 200px;
-  height: 200px;
-  border-radius: 26px;
-}
-.stubborn {
-  
-  text-align: center;
-  line-height: 160px;
-}
-.thingert {
-  perspective: 1500;
-}
-
-#chickent {
-  color: #fff;
-  position: relative;
-  text-align: center;
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-  transition: all 0.6s ease;
-  transform-style: preserve-3d;
-}
-#baseDivt, #upDivt {
-  border: 4px dashed #000;
-  position: absolute;
-  background: #5677fc;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  backface-visibility: hidden;
-}
-#baseDivt {
-  background-color: #8cf;
-  background-size: cover;
-}
-#upDivt {
-  transform: rotateY(180deg);
-}
-.noodlet:hover {
-  transform: rotateY(180deg);
-}
-#upSelectt {
+.select {
   position: absolute;
   top: 89px;
   left: 80px;
