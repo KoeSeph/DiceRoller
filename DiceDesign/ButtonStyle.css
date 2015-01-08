@@ -48,7 +48,6 @@
   border-radius: 26px;
 }
 .stubborn {
-  
   text-align: center;
   line-height: 160px;
 }
@@ -90,4 +89,13 @@
   position: absolute;
   top: 89px;
   left: 80px;
+}
+.whisper {
+  font-size: 40px;
+  text-align: inherit;
+  line-height: 120px;
+}
+p {
+  text-align: inherit;
+  line-height: 160px;
 }
