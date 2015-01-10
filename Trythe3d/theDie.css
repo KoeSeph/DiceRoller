@@ -1,0 +1,359 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: #182D3D;
+}
+
+@media all and (max-width: 640px) {
+  body {
+    width: 640px;
+  }
+}
+
+article {
+  width: 844px;
+  padding: 20px;
+  padding-right:  0px;
+  margin: 10% auto;
+}
+
+article .stage{
+  position: relative;
+  float: left;
+  width:  260px;
+  height:  260px;
+  margin-right: 20px;
+  -wekit-perspective: 700px;
+  -moz-perspective: 700px;
+  }
+
+.box{
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-style: preserve-3d;
+  -moz-transform-origin: 50% 50%;
+  left: 30px;
+  top: 50px;
+  width:  200px;
+  height: 173px;
+  cursor: move;
+  }
+
+article::after{
+  width: 0px;
+  display:  block;
+  position:  relative;
+  height: 0px;
+  visibility:  hidden;
+  overflow:  hidden;
+  background:  red;
+  content:  ".";
+  clear:  both;
+}
+
+
+
+#stage1 .box .spike .e1 .t1{
+  border-bottom-color: #9933FF;
+}
+
+#stage1 .box .spike .e1 .t2{
+  border-bottom-color: #A347FF;
+}
+
+#stage1 .box .spike .e1 .t3{
+  border-bottom-color: #AD5CFF;
+}
+
+#stage1 .box .spike .e2 .t1{
+  border-bottom-color: #B770FF;
+}
+
+#stage1 .box .spike .e2 .t2{
+  border-bottom-color: #C285FF;
+}
+
+#stage1 .box .spike .e2 .t3{
+  border-bottom-color: #CC99FF;
+}
+
+
+
+.dice {
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: spin 50s infinite linear;
+}
+.dice span {
+  position: absolute;
+  margin: 100px 0 0 100px;
+  display: block;
+  font-size: 2.5em;
+  padding: 10px;
+}
+.dice .side {
+  backface-visibility: hidden;
+  background: transparent url(http://www.frank-designs.com/images/dice-sprite.png) 0 0 no-repeat;
+}
+.dice .number {
+  font-size: 4em;
+}
+.dice .number.center {
+  margin-top: 20px;
+  text-align: center;
+}
+#d20 {
+  width: 80px;
+  height: 70px;
+}
+#d20 .side {
+  position: absolute;
+  width: 80px;
+  height: 70px;
+  background-position: 0 -585px;
+}
+#d20 .cap-top {
+  transform-style: preserve-3d;
+  transform: translateY(-18px);
+}
+#d20 .cap-bottom {
+  transform-style: preserve-3d;
+  transform: translateY(18px) rotateY(36deg);
+}
+#d20 .one {
+  transform: rotateY(0deg) rotateX(53deg) translateZ(47px);
+}
+#d20 .two {
+  transform: rotateY(72deg) rotateX(53deg) translateZ(47px);
+}
+#d20 .three {
+  transform: rotateY(144deg) rotateX(53deg) translateZ(47px);
+}
+#d20 .four {
+  transform: rotateY(216deg) rotateX(53deg) translateZ(47px);
+}
+#d20 .five {
+  transform: rotateY(288deg) rotateX(53deg) translateZ(47px);
+}
+#d20 .six {
+  transform: rotateY(0deg) rotateX(11deg) rotateZ(180deg) translateZ(62px) translateY(-12px);
+}
+#d20 .seven {
+  transform: rotateY(72deg) rotateX(11deg) rotateZ(180deg) translateZ(62px) translateY(-12px);
+}
+#d20 .eight {
+  transform: rotateY(144deg) rotateX(11deg) rotateZ(180deg) translateZ(62px) translateY(-12px);
+}
+#d20 .nine {
+  transform: rotateY(216deg) rotateX(11deg) rotateZ(180deg) translateZ(62px) translateY(-12px);
+}
+#d20 .ten {
+  transform: rotateY(288deg) rotateX(11deg) rotateZ(180deg) translateZ(62px) translateY(-12px);
+}
+#d20 .eleven {
+  transform: rotateY(36deg) rotateX(-11deg) translateZ(62px) translateY(-12px);
+}
+#d20 .twelve {
+  transform: rotateY(108deg) rotateX(-11deg) translateZ(62px) translateY(-12px);
+}
+#d20 .thirteen {
+  transform: rotateY(180deg) rotateX(-11deg) translateZ(62px) translateY(-12px);
+}
+#d20 .fourteen {
+  transform: rotateY(252deg) rotateX(-11deg) translateZ(62px) translateY(-12px);
+}
+#d20 .fifteen {
+  transform: rotateY(324deg) rotateX(-11deg) translateZ(62px) translateY(-12px);
+}
+#d20 .sixteen {
+  transform: rotateY(0deg) rotateX(-53deg) rotateZ(180deg) translateZ(47px);
+}
+#d20 .seventeen {
+  transform: rotateY(72deg) rotateX(-53deg) rotateZ(180deg) translateZ(47px);
+}
+#d20 .eighteen {
+  transform: rotateY(144deg) rotateX(-53deg) rotateZ(180deg) translateZ(47px);
+}
+#d20 .nineteen {
+  transform: rotateY(216deg) rotateX(-53deg) rotateZ(180deg) translateZ(47px);
+}
+#d20 .twenty {
+  transform: rotateY(288deg) rotateX(-53deg) rotateZ(180deg) translateZ(47px);
+}
+#d20 .number {
+  font-size: 2.3em;
+}
+#d20 .number.center {
+  margin-top: 30px;
+  text-align: center;
+}
+@-webkit-keyframes rotate1 {
+  from {
+      -webkit-transform: rotateY(0deg);
+    }
+  
+  50%{-webkit-transform: rotateY(180deg);
+  
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+
+
+@-webkit-keyframes rotate2 {
+  from {
+      -webkit-transform:  rotateZ(180deg) rotateY(0deg);
+    }
+  
+  50%{-webkit-transform:  rotateZ(180deg) rotateY(180deg);
+  
+  }
+  to {
+    -webkit-transform:  rotateZ(180deg) rotateY(360deg);
+  }
+}
+
+
+@-webkit-keyframes rotate3 {
+  from {
+      -webkit-transform:   rotateZ(90deg) rotateY(0deg);
+    }
+  
+  50%{-webkit-transform:  rotateZ(90deg) rotateY(180deg);
+  
+  }
+  to {
+    -webkit-transform:  rotateZ(90deg) rotateY(360deg);
+  }
+}
+
+
+@-webkit-keyframes rotate4 {
+  from {
+      -webkit-transform:   rotateZ(270deg) rotateY(0deg);
+    }
+  
+  50%{-webkit-transform:   rotateZ(270deg) rotateY(180deg);
+  
+  }
+  to {
+    -webkit-transform:   rotateZ(270deg) rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes rotate5 {
+  from {
+      -webkit-transform:     rotateZ(90deg) rotateX(90deg) rotateY(0deg);
+    }
+  
+  50%{-webkit-transform:     rotateZ(90deg) rotateX(90deg) rotateY(180deg);
+  
+  }
+  to {
+    -webkit-transform:     rotateZ(90deg) rotateX(90deg) rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes rotate6 {
+  from {
+      -webkit-transform: rotateZ(90deg) rotateX(270deg) rotateY(0deg);
+    }
+  
+  50%{-webkit-transform: rotateZ(90deg) rotateX(270deg) rotateY(180deg);
+  
+  }
+  to {
+    -webkit-transform: rotateZ(90deg) rotateX(270deg) rotateY(360deg);
+  }
+}
+
+
+
+@-moz-keyframes rotate1 {
+  from {
+      -moz-transform: rotateY(0deg);
+    }
+  
+  50%{-moz-transform: rotateY(180deg);
+  
+  }
+  to {
+    -moz-transform: rotateY(360deg);
+  }
+}
+
+
+@-moz-keyframes rotate2 {
+  from {
+      -moz-transform:  rotateZ(180deg) rotateY(0deg);
+    }
+  
+  50%{-moz-transform:  rotateZ(180deg) rotateY(180deg);
+  
+  }
+  to {
+    -moz-transform:  rotateZ(180deg) rotateY(360deg);
+  }
+}
+
+
+@-moz-keyframes rotate3 {
+  from {
+      -moz-transform:   rotateZ(90deg) rotateY(0deg);
+    }
+  
+  50%{-moz-transform:  rotateZ(90deg) rotateY(180deg);
+  
+  }
+  to {
+    -moz-transform:  rotateZ(90deg) rotateY(360deg);
+  }
+}
+
+
+@-moz-keyframes rotate4 {
+  from {
+      -moz-transform:   rotateZ(270deg) rotateY(0deg);
+    }
+  
+  50%{-moz-transform:   rotateZ(270deg) rotateY(180deg);
+  
+  }
+  to {
+    -moz-transform:   rotateZ(270deg) rotateY(360deg);
+  }
+}
+
+@-moz-keyframes rotate5 {
+  from {
+      -moz-transform:     rotateZ(90deg) rotateX(90deg) rotateY(0deg);
+    }
+  
+  50%{-moz-transform:     rotateZ(90deg) rotateX(90deg) rotateY(180deg);
+  
+  }
+  to {
+    -moz-transform:     rotateZ(90deg) rotateX(90deg) rotateY(360deg);
+  }
+}
+
+@-moz-keyframes rotate6 {
+  from {
+      -moz-transform: rotateZ(90deg) rotateX(270deg) rotateY(0deg);
+    }
+  
+  50%{-moz-transform: rotateZ(90deg) rotateX(270deg) rotateY(180deg);
+  
+  }
+  to {
+    -moz-transform: rotateZ(90deg) rotateX(270deg) rotateY(360deg);
+  }
+}
+
+/*trying*/
+/**/
