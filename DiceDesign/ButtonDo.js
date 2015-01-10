@@ -64,7 +64,7 @@ $(document).ready(function(){
       $('.rollin').on('click', function(){
         $('.stubborn').trigger('click');
       });
-      $(".hook").on('mouseout', function(){
+      $(".hook").on('mouseleave', function(){
         $(this).addClass('noodle');
       });
       console.log('work');
