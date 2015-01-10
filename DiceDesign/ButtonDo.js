@@ -6,7 +6,7 @@ $(document).ready(function(){
       elem - the select element that received the action
       */
       $('.pushin').on('click', function(){
-        $('.wrapper').append("<div class='thinger'> <div class='hook noodle'>  <div class='baseDiv'><p class='stubborn'><p class='funk'>Hover me</p></p></div>  <div class='upDiv'>    <select class='select'>        <option value='d2'>d2</option>        <option value='d4'>d4</option>        <option value='d6'>d6</option>        <option value='d8'>d8</option>        <option value='d10'>d10</option>        <option value='d12'>d12</option>        <option value='d20'>d20</option>        <option value='d100'>d100</option>    </select>  </div> </div></div>");
+        $('.wrapper').append("<div class='thinger'> <div class='hook noodle'>  <div class='baseDiv'><p class='stubborn'><p class='funk'>Hover me</p></p></div>  <div class='upDiv'>    <button class='pepsi'>X</button> <select class='select'>        <option value='d2'>d2</option>        <option value='d4'>d4</option>        <option value='d6'>d6</option>        <option value='d8'>d8</option>        <option value='d10'>d10</option>        <option value='d12'>d12</option>        <option value='d20'>d20</option>        <option value='d100'>d100</option>    </select>  </div> </div></div>");
         var frm = 1;
         var too = 0;
         var modie = 0;
@@ -19,7 +19,7 @@ $(document).ready(function(){
          };
          var fast = Math.round(getRandomArbitrary(frm,too));
          $(this).append('<p class="whisper">'+ fast+'</p>');
-          $('.funk').addClass('imagine');
+         $('.funk').addClass('imagine');
          return totter = totter + fast;
        };
        function getRandomArbitrary(min, max) {
@@ -67,8 +67,16 @@ $(document).ready(function(){
       $(".hook").on('mouseleave', function(){
         $(this).addClass('noodle');
       });
+      $('.pepsi').on('click', function(){
+        $(this).parent().parent().remove();
+      });
       console.log('work');
       $('.holder').slideUp(); 
+      console.log(totter);
     });
-/*$(select).val()*/
+  $('.takin').on('click', function(){
+  $('.thinger').empty();
+  $('.thinger').remove();
+  $('.holder').slideDown();
+  });
 });
