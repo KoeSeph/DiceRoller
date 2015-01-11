@@ -33,9 +33,10 @@ $(document).ready(function(){
         console.log(elem.val());
         switch(elem.val()){
           case 'd2':
-          return $(this).too = 2;
+          return too = 2;
           break;
-          case 'd4':too = 4;
+          case 'd4':
+          return too = 4;
           break;
           case 'd6':
           return too = 6;
@@ -77,6 +78,7 @@ $(document).ready(function(){
   $('.takin').on('click', function(){
   $('.thinger').empty();
   $('.thinger').remove();
+  $('.holder').find('.whisper').remove()
   $('.holder').slideDown();
   });
 });
