@@ -21,8 +21,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   min-height: 40px;
-  margin: 5% 35% 0 37%;
+  margin: 5% 0% 0 30%;
   border-radius: 50px;
+}
+.pushin, .rollin, .takin {
+
+  font-size: 25px;
 }
 .wrapper{
   display: inline-flex;
@@ -30,7 +34,7 @@ body {
   flex-wrap: wrap;
   background-color: #aaa;
   border-radius: 50px;
-  margin-top: 200px;
+  margin-top: 150px;
   min-height: 245px;
   min-width: 89.5%;
   max-width: 89.5%;
@@ -38,22 +42,17 @@ body {
 }
 .pushin{
   background-color: #98ee78;
-  width: 80px;
+  width: 180px;
   border-radius: 10px;
 }
 .rollin {
   background-color: #98ee78;
-  width: 80px;
+  width: 180px;
   border-radius: 10px;
 }
 .takin{
   background-color: #98ee78;
-  width: 80px;
-  border-radius: 10px;
-}
-.addin {
-  background-color: #98ee78;
-  width: 80px;
+  width: 180px;
   border-radius: 10px;
 }
 #shore {
